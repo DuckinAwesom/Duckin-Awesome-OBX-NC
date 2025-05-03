@@ -67,14 +67,7 @@
 </body>
 </html>
 
-
-
-
-
-
-
-
-body {
+<body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
@@ -82,26 +75,26 @@ body {
   color: #333;
 }
 
-h1, h2 {
+<h1, h2 {
   color: #006d77;
 }
 
-section {
+<section {
   padding: 40px 20px;
   max-width: 800px;
   margin: auto;
 }
 
-ul {
+<ul {
   list-style: none;
   padding: 0;
 }
 
-li {
+<li {
   margin-bottom: 10px;
 }
 
-/* Hamburger menu */
+</* Hamburger menu */
 .menu-toggle {
   position: fixed;
   top: 20px;
@@ -111,7 +104,7 @@ li {
   z-index: 1000;
 }
 
-nav#side-menu {
+<nav#side-menu {
   position: fixed;
   top: 0;
   left: -200px;
@@ -125,28 +118,23 @@ nav#side-menu {
   transition: left 0.3s ease;
 }
 
-nav#side-menu a {
+<nav#side-menu a {
   color: white;
   padding: 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav#side-menu a:hover {
+<nav#side-menu a:hover {
   background: #004d52;
 }
 
 
 
-
-
-
-
-
-const menuToggle = document.getElementById('menu-toggle');
+<const menuToggle = document.getElementById('menu-toggle');
 const sideMenu = document.getElementById('side-menu');
 
-menuToggle.addEventListener('click', () => {
+<menuToggle.addEventListener('click', () => {
   if (sideMenu.style.left === '0px') {
     sideMenu.style.left = '-200px';
   } else {
