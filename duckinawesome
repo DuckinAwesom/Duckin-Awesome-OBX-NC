@@ -1,0 +1,143 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Duckin Awesome - Duck, NC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hamburger Menu -->
+<div class="menu-toggle" id="menu-toggle">&#9776;</div>
+<nav id="side-menu">
+  <a href="#home">Home</a>
+  <a href="#shops">Shops Near You</a>
+  <a href="#restaurants">Restaurants</a>
+  <a href="#activities">Activities</a>
+</nav>
+
+<!-- Content Sections -->
+<section id="home">
+  <h1>Welcome to Duckin Awesome!</h1>
+  <p>Enjoy your stay in beautiful Duck, North Carolina. Here's everything you need for a comfortable visit.</p>
+
+  <h2>Trash Information</h2>
+  <p>Trash pickup is on Monday and Thursday. Please use the green bins outside the house.</p>
+
+  <h2>WiFi Information</h2>
+  <p>Network: DuckinAwesomeGuest<br>Password: sunrealty2025</p>
+
+  <h2>Pet Policy</h2>
+  <p>We are pet friendly! Please keep pets off the furniture and clean up after them outside.</p>
+
+  <h2>Laundry</h2>
+  <p>The laundry room is on the first floor. Detergent is provided.</p>
+</section>
+
+<section id="shops">
+  <h2>Shops Near You</h2>
+  <ul>
+    <li><strong>Duck's Cottage Coffee & Books</strong> – Quaint shop with books and espresso</li>
+    <li><strong>WaterFront Shops</strong> – Boutique shopping with great views</li>
+    <li><strong>Islands By Amity</strong> – Local beachwear and accessories</li>
+  </ul>
+</section>
+
+<section id="restaurants">
+  <h2>Restaurants Nearby</h2>
+  <ul>
+    <li><strong>Blue Point</strong> – Upscale waterfront dining</li>
+    <li><strong>Coastal Cravings</strong> – Great seafood and casual vibe</li>
+    <li><strong>Duck Donuts</strong> – Must-try custom donuts!</li>
+  </ul>
+</section>
+
+<section id="activities">
+  <h2>Things to Do</h2>
+  <ul>
+    <li>Go kayaking in Currituck Sound</li>
+    <li>Walk the Duck Boardwalk</li>
+    <li>Visit Duck Town Park</li>
+    <li>Book a dolphin tour or sunset cruise</li>
+  </ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+style.css
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #333;
+}
+
+h1, h2 {
+  color: #006d77;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+nav#side-menu {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background: #006d77;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+}
+
+nav#side-menu a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav#side-menu a:hover {
+  background: #004d52
+
+script.js
+const menuToggle = document.getElementById('menu-toggle');
+const sideMenu = document.getElementById('side-menu');
+
+menuToggle.addEventListener('click', () => {
+  if (sideMenu.style.left === '0px') {
+    sideMenu.style.left = '-200px';
+  } else {
+    sideMenu.style.left = '0px';
+  }
+});
